@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <h5>Employee Registration</h5>
+        Fill in the field below for registrate an employee:
+        <hr/>
+        <form action="/Employee/Registration" method="post">
+            <label>Employee name:</label> <br />
+            <input type="text" name="name" required />
+            <br />
+            <br />
+
+            <label>Employee document:</label> <br />
+            <input type="text" name="document" required />
+            <br />
+            <br />
+
+            <label>Employee registration:</label> <br />
+            <input type="text" name="registration" required />
+            <br />
+            <br />
+
+            <label>Employee admission date:</label> <br />
+            <input type="date" name="admissionDate" required />
+            <br />
+            <br />
+
+            <input type="submit" name="Registre employee" class="btn btn-success" />
+            <br />
+            <br />
+        </form>
+        <br />
+        <br />
+        <h6>@TempData["Message"]</h6>
+    </div>
+
+    <script src ="~/js/bootstrap.js"></script>
+</body>
+</html>
